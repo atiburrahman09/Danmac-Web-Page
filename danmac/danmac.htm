@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="phpuser" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+    
+    <link rel="stylesheet" href="meanmenu.css" media="all" />
+
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <link href="danmac.css" rel="stylesheet" type="text/css"/>
+	<title>DanMac Mockup</title>
+    <!--Mean Menu JS start-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+       <!-- jQuery -->
+  <!-- FlexSlider -->
+  <script defer src="jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        prevText: "", //String: Set the text for the "previous" directionNav item
+        nextText: "", 
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+    <script src="jquery.meanmenu.js"></script>
+    <script type="text/javascript">
+    	jQuery(document).ready(function () {
+    	    jQuery('.menu').meanmenu({
+    	       meanScreenWidth: "600",
+               meanMenuContainer: '.responsive-nav'
+    	    });
+    	});
+    </script>
+    <!--Mean Menu Js End-->
+</head>
+
+<body>
+
+<div class="container">
+    <!--HEADER START-->
+    <div class="header">
+        <div class="logo">
+            <img  src="image/danmac.jpg"/>
+        </div>
+        
+        <div class="headerlink">
+            <ul>
+                <li class="special"><a href="#"><img src="image/special.png"/><br/>Special</a></li>
+                <li class="subscribe"><a href="#"><img src="image/subscribe.png"/><br/>Subscribe</a></li>
+                <li class="location" ><a href="#"><img src="image/location.png" /><br/>Location</a></li>
+            </ul>
+        </div>
+        
+        <div class="number">
+            <p>CALL US NOW</p>
+            <img src="image/callnow.png"/>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+        <!--HEADER END-->
+        
+        <!--MENU START-->
+        <div  class="mainmenu">
+        
+        <div class="menu">
+            <ul class="main-nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li class="dropdownmenu">
+                <a href="#">FORKLIFTS</a>
+                    <ul class="drop-nav">
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li class="flyout">
+                             <a href="#">Photography</a>
+                                <ul class="flyout-nav">
+                                    <li><a href="#">Nature</a></li>
+                                    <li><a href="#">People</a></li>
+                                    <li><a href="#">Pets</a></li>         
+                                </ul>
+                            </li>
+                            <li><a href="#">Writing</a></li>       
+                    </ul>
+                
+                </li>
+                <li><a href="#">ATTACHMENTS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+
+                
+            </ul>
+            
+        </div>
+        
+        <div class="search">
+                <form class="searchthis" >
+                <input class="input" type="text" placeholder="SEARCH..."/> 
+                <button><img src="image/search.png"/></button>
+                
+                </form>
+                
+        </div>
+        <div class="responsive-nav"></div>
+        <div style="clear: both;"></div>
+        </div>
+        
+        <!--MENU END-->
+        
+        <!--MAIN BODY START-->
+    <div class="mainbody">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="image/1.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="image/1.jpg" />
+  	    		</li>                
+  	    		<li>
+  	    	    <img src="image/1.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="image/1.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="image/1.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+       <div class="mainbodytext">
+            <p>GREAT CHOICE OF FORKLIFTS</p> <br />
+            <p>FOR GENERAL PURPOSE</p>
+            <p class="hirelink"><a href="#">LOOKING TO HIRE?</a></p>
+            <p class="buylink"><a href="#">LOOKING TO BUY?</a></p>
+       </div>
+
+    
+    </div>
+    <!--MAIN BODY END-->
+    
+    <!--INFORMATION OF PRODUCT START-->
+    <div class="product">
+        
+        <div class="forklifts">
+            <div class="forktitle">FORKLIFTS</div>
+            <div>
+                <img src="image/liftcar.jpg"/>
+            </div>
+            <div class="section">
+              <div class="hire">
+              <p><a href="#">HIRE/BUY FORKLIFTS</a></p>
+              </div>
+              <div class="productinfo">
+              <p><a href="#">SEE ALL FORKLIFTS</a></p>
+              </div>
+            </div>
+        
+        </div>
+        <div class="attachments">
+            <div class="attachtitle">ATTACHMENTS</div>
+            <div>
+                <img src="image/liftcar2.jpg"/>
+            </div>
+            <div class="section">
+              <div class="hireattach">
+              <p><a href="#">HIRE/BUY ATTACHMENTS</a></p>
+              </div>
+              <div class="attachinfo">
+              <p><a href="#">SEE ALL ATTACHMENTS</a></p>
+              </div>
+            </div>
+        </div>
+        
+        <div class="quicknote">
+            <div class="quicktitle">
+                QUICK NOTE
+            </div>
+            <form class="form">
+                
+                <input class="formbox" type="text" placeholder="Name..."/><br />
+                <input class="formbox" type="text" placeholder="Contact Number..."/><br />
+                <input class="formbox" type="text" placeholder="Contact Email..."/><br />
+                 <select class="dropdown">
+                      <option value="Looking to hire a forklift">Looking to hire a forklift</option>
+                      <option value="saab">Saab</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                 </select> 
+                
+                <textarea placeholder="Enquiry..."></textarea><br />
+                <input class="checkbox" type="checkbox" /><label >Subscribe to our newsletter</label> <br />
+                <button type="button">SUBMIT FORM</button><br />
+                
+            </form>
+             
+        </div>
+    <div style="clear: both;"></div>
+    </div>
+    <!--INFORMATION OF PRODUCT END-->
+    
+    <div class="news">
+        <h1>Need to hire or buy a forklif or attachment?</h1>
+        <p>Danmac Forklifts can provide you with the comprehensive package to suit your application. 
+        Our company was established in 1980 as a family business with a main focus on providing the range
+         of unique forklifts and forklift attachments at very competitive rates. </p>
+    </div>
+    <div class="horizontalline">
+       <span></span>
+    </div>
+    
+    <!--CONTACT START-->
+    <div class="contact">
+        
+            <div class="contactinfo">
+                <h1>GET IN TOUCH</h1>
+                <p>At Danmac forklifts we strive to provide the best possible forklift service. 
+                No matter the size of the job, we’ll have a forklift and / or attachment solution for you! 
+                Come in and meet our friendly team, or simply contact us for any questions, queries or advice. </p>
+            </div>
+        <div class="contactus">
+              <p><a href="#">CONTACT US</a></p>
+        </div>
+    </div>
+    <!--CONTACT END-->
+    
+    <!--FOOTER START-->
+    <div class="footer">
+        <div class="danmaclogo">
+            
+            <img src="image/background4.jpg"/>
+            
+            
+
+        </div>
+  
+        <div class="footerlist1">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FAQS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        
+                
+                
+                
+        <div class="footerlist2">
+        <h1 class="footerforklift"><a href="#">FORKLIFT</a></h1>
+             <ul class="footerforkliftlist">
+                <li class="footerforkliftlist1"><a href="#">UP TO 2990 KG</a></li>
+                <li><a href="#">3000 KG TO 4990 KG</a></li>
+                <li><a href="#">5000 KG TO 6990KG</a></li>
+                <li><a href="#">OVAR 6990 KG</a></li>
+            </ul>
+        </div>
+                
+        <div class="footerlist3">
+        <h1><a href="#">ATTACHMENTS</a></h1>
+            <ul class="footerattchment">
+                
+                <li><a href="#">CLAMP</a></li>
+                <li><a href="#">RAMP</a></li>
+                <li><a href="#">FORK</a></li>
+            </ul>
+        </div>
+        <div class="mailinglist">
+            <form >
+                <input type="text" value="Subscribe to our Mailing List...."/>
+                <input class= "submit" type= "submit" value=""/>
+            
+            </form>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <!--FOOTER END-->
+    
+    <div class="footertext">
+            <div  class="footertext1">
+                <p>
+                    © 2014 Danmac Forklifts.  All Rights Reserved.
+                </p>
+            </div>
+            
+            <div class="footertext2">
+                <p >
+                    Web Design | Google AdWords
+                </p>
+            </div> 
+            
+            <div class="logo2">
+                <button><img src="image/logo-2.png"/></button>
+            </div>
+            <div style="clear: both;"></div>
+            
+            
+    </div>
+</div>    
+
+</body>
+</html>
